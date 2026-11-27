@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Local Bicycle Repair Opportunities — Template</title>
+  <style>
+    :root {
+      --ink: #22241f;
+      --muted: #4c5148;
+      --accent: #435534;
+      --rule: #737a6d;
+      --page-content-height: 9.6in;
+    }
+
+    @page {
+      size: letter;
+      margin: .58in .62in .65in;
+    }
+    @page :left { margin-right: .9in; }
+    @page :right { margin-left: .9in; }
+
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: white; font: 11.5pt/1.42 system-ui, sans-serif; }
+    h1, h2, h3 { margin: 0; line-height: 1.15; break-after: avoid; }
+    h1 { font-size: 30pt; max-width: 21ch; }
+    h2 { font-size: 17pt; margin-top: 1.3rem; }
+    h3 { font-size: 13pt; }
+    p, dl { margin: .42rem 0 .8rem; }
+    p, dd { orphans: 3; widows: 3; }
+    a { color: var(--accent); text-underline-offset: .14em; overflow-wrap: anywhere; }
+    .page { min-height: var(--page-content-height); display: flex; flex-direction: column; }
+    .eyebrow, .status { color: var(--accent); font-size: 10pt; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; }
+    .intro { margin-bottom: 1rem; }
+    .listing { border-top: 1px solid var(--rule); margin-top: .55rem; padding: .55rem 0 .15rem; break-inside: avoid; }
+    .listing .status { margin: .25rem 0; }
+    .listing p { margin-bottom: .45rem; }
+    .listing .source { color: var(--muted); font-size: 10pt; }
+    .write { margin: .8rem 0; break-inside: avoid; }
+    .write-line { height: .34in; border-bottom: 1px solid var(--rule); }
+    footer { margin-top: auto; border-top: 1px solid var(--rule); padding-top: .12in; color: var(--muted); display: flex; gap: 1rem; justify-content: space-between; font-size: 9.5pt; }
+
+    @media screen {
+      body { background: #eff0eb; }
+      .page { max-width: 8.5in; margin: 1rem auto; padding: .6in .78in; background: white; }
+    }
+    @media screen and (max-width: 600px) {
+      .page { min-height: auto; padding: 1.4rem; }
+      footer { margin-top: 2rem; }
+    }
+    @media print {
+      .page + .page { break-before: page; }
+    }
+  </style>
+</head>
+<body>
+  <!-- All listings and evidence in this template are fictional. Replace them before delivery. -->
+  <main>
+    <section class="page" id="overview" aria-labelledby="title">
+      <div>
+        <p class="eyebrow">Opportunity directory · Fictional example</p>
+        <h1 id="title">Bicycle repair shops near Alderwick</h1>
+        <p class="intro">Sample directory covering 15 km straight-line from Alderwick Civic Square, checked on 12 January 2026. This page demonstrates an evidence structure using invented businesses and locations.</p>
+        <p><strong>Results</strong> · One confirmed opening and one lead in the sample data. Groups are sorted by straight-line distance.</p>
+        <p><strong>Print</strong> · US Letter at actual size. Flip on the long edge for duplex printing.</p>
+
+        <h2>Confirmed openings</h2>
+        <article class="listing" aria-labelledby="opening">
+          <h3 id="opening">Spoke &amp; Pine Cycles</h3>
+          <p class="status">Confirmed opening</p>
+          <p><strong>Location</strong> · Alderwick North · 4.1 km</p>
+          <p><strong>Contact</strong> · <a href="https://example.org/">Shop careers page</a></p>
+          <p><strong>Evidence and next step</strong> · The fictional posting accepts workshop assistant applications until 31 January 2026. Review the duties and prepare an example of a documented repair task.</p>
+          <p class="source">D01 · Sample job posting · Checked 12 January 2026</p>
+        </article>
+
+        <h2>Leads for outreach</h2>
+        <article class="listing" aria-labelledby="lead">
+          <h3 id="lead">Juniper Wheel Works</h3>
+          <p class="status">Lead</p>
+          <p><strong>Location</strong> · Alderwick East · 8.7 km</p>
+          <p><strong>Contact</strong> · <a href="https://example.org/">Shop contact page</a></p>
+          <p><strong>Evidence and next step</strong> · Its sample workshop page lists beginner maintenance sessions. Ask how new mechanics can get supervised practice.</p>
+          <p class="source">D02 · Sample workshop page · Checked 12 January 2026</p>
+        </article>
+      </div>
+      <footer><a href="#follow-up">Method and follow-up</a><span>1 / 2</span></footer>
+    </section>
+
+    <section class="page" id="follow-up" aria-labelledby="method">
+      <div>
+        <p class="eyebrow">Method and follow-up</p>
+        <h2 id="method">How the results were verified</h2>
+        <p>Replace this text with the origin and boundary, locations and search channels covered, distance source, verification date, and any areas or facts left unresolved.</p>
+        <h2>Outreach tracker</h2>
+        <p>Use one copy per promising organization. Review the listing evidence before reaching out.</p>
+        <div class="write"><h3>Organization and date</h3><div class="write-line"></div></div>
+        <div class="write"><h3>Public contact route</h3><div class="write-line"></div></div>
+        <div class="write"><h3>What I asked and what I learned</h3><div class="write-line"></div><div class="write-line"></div></div>
+        <div class="write"><h3>Next step and follow-up date</h3><div class="write-line"></div><div class="write-line"></div></div>
+      </div>
+      <footer><a href="#overview">Directory overview</a><span>2 / 2</span></footer>
+    </section>
+  </main>
+</body>
+</html>

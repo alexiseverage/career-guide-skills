@@ -1,0 +1,5 @@
+# Local outputs and installed dependencies
+output/
+node_modules/
+__pycache__/
+.DS_Store

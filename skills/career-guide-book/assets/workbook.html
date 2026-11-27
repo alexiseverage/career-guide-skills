@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bicycle Repair Career Workbook — Template</title>
+  <style>
+    :root {
+      --ink: #202724;
+      --muted: #4c5550;
+      --accent: #294d40;
+      --rule: #737a76;
+      --page-content-height: 9.6in;
+    }
+
+    @page {
+      size: letter;
+      margin: .58in .62in .65in;
+    }
+    @page :left { margin-right: .95in; }
+    @page :right { margin-left: .95in; }
+
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: white; font: 11.5pt/1.46 system-ui, sans-serif; }
+    h1, h2, h3 { margin: 0; line-height: 1.16; break-after: avoid; }
+    h1, h2 { font-family: Georgia, serif; font-weight: 600; }
+    h1 { font-size: 38pt; max-width: 14ch; }
+    h2 { font-size: 27pt; }
+    h3 { font-size: 13pt; margin-top: 1.35rem; }
+    p, ul, ol, dl { margin: .5rem 0 1rem; }
+    li + li { margin-top: .3em; }
+    p, li { orphans: 3; widows: 3; }
+    a { color: var(--accent); text-underline-offset: .14em; overflow-wrap: anywhere; }
+    nav a { display: inline-block; }
+    .eyebrow { color: var(--accent); font-size: 10pt; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .subtitle { color: var(--muted); margin: .8rem 0 1.8rem; max-width: 45ch; }
+    .page { min-height: var(--page-content-height); display: flex; flex-direction: column; }
+    .cover .sheet-content { padding-top: 1in; }
+    .callout { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); margin: 1.3rem 0; padding: .8rem 0; break-inside: avoid; }
+    .callout h3 { margin-top: 0; }
+    .callout h3:not(:first-child) { margin-top: 1rem; }
+    .cover .callout h2 { font: 700 13pt/1.16 system-ui, sans-serif; }
+    .callout p:last-child { margin-bottom: 0; }
+    .checks { list-style: none; padding-left: 0; }
+    .checks li { padding-left: 1.45em; position: relative; }
+    .checks li::before { content: ""; width: .72em; height: .72em; border: 1px solid currentColor; position: absolute; left: .1em; top: .31em; }
+    .write { break-inside: avoid; }
+    .write-line { height: .33in; border-bottom: 1px solid var(--rule); }
+    footer { margin-top: auto; border-top: 1px solid var(--rule); padding-top: .12in; color: var(--muted); display: flex; gap: 1rem; justify-content: space-between; font-size: 9.5pt; }
+
+    @media screen {
+      body { background: #eef0ed; }
+      .page { max-width: 8.5in; margin: 1rem auto; padding: .6in .78in; background: white; }
+    }
+    @media screen and (max-width: 600px) {
+      .page { min-height: auto; padding: 1.4rem; }
+      footer { margin-top: 2rem; }
+    }
+    @media print {
+      .page + .page { break-before: page; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Replace all example copy, numbers, links, and source entries before delivery. -->
+  <main>
+    <section class="page cover" id="p1" aria-labelledby="title">
+      <div class="sheet-content">
+        <p class="eyebrow">Career workbook</p>
+        <h1 id="title">Get started in bicycle repair</h1>
+        <p class="subtitle">Practice basic inspections, record what you find, and build a work sample to discuss with a mechanic.</p>
+        <div class="callout">
+          <h2>Take the first step</h2>
+          <p>Set aside a notebook for practice. Write down one repair skill you want to learn and one bicycle you have permission to inspect.</p>
+        </div>
+        <p>Print on US Letter at actual size. For duplex printing, flip on the long edge. Copy the practice log as needed.</p>
+      </div>
+      <footer><a href="#p2">Milestone map</a><span>1 / 6</span></footer>
+    </section>
+
+    <section class="page" id="p2" aria-labelledby="map">
+      <div>
+        <p class="eyebrow">Start here</p>
+        <h2 id="map">Milestone map</h2>
+        <nav aria-label="Workbook contents">
+          <ol>
+            <li><a href="#p3">Learn to record a bicycle's condition</a> · 3</li>
+            <li><a href="#p4">Complete a practice inspection</a> · 4</li>
+            <li><a href="#p5">Copy the practice log</a> · 5</li>
+            <li><a href="#p6">Review sources</a> · 6</li>
+          </ol>
+        </nav>
+        <h3>How to use this workbook</h3>
+        <p>Read the lesson, do the action, and save the evidence. Use the checkpoint to decide what to practice next.</p>
+      </div>
+      <footer><span>Bicycle repair workbook</span><span>2 / 6</span></footer>
+    </section>
+
+    <section class="page" id="p3" aria-labelledby="lesson">
+      <div>
+        <p class="eyebrow">Milestone 1 · Lesson</p>
+        <h2 id="lesson">Record the condition before touching a tool</h2>
+        <p>A short intake record helps a mechanic separate what they observed from what still needs a closer check. Write a physical observation and record where you saw it.</p>
+        <h3>Worked example</h3>
+        <p>“The rear tread has a visible cut near the centerline. I marked its location in my photo. A mechanic should assess it before the bicycle is ridden.”</p>
+        <h3>What to practice next</h3>
+        <p><a href="#p4">Record three observations</a> using the same approach. Start with a stationary bicycle and photograph only equipment you have permission to document.</p>
+      </div>
+      <footer><a href="#p2">Milestone map</a><span>3 / 6</span></footer>
+    </section>
+
+    <section class="page" id="p4" aria-labelledby="action">
+      <div>
+        <p class="eyebrow">Milestone 1 · Action</p>
+        <h2 id="action">Complete a practice inspection</h2>
+        <ul class="checks">
+          <li>Record the date and a label you can use to identify the bicycle later.</li>
+          <li>Write three observations, with the relevant location on the bicycle for each.</li>
+          <li>Circle one item you would ask a mechanic to assess.</li>
+        </ul>
+        <div class="write">
+          <h3>Observations</h3>
+          <div class="write-line"></div><div class="write-line"></div><div class="write-line"></div>
+        </div>
+        <div class="callout">
+          <h3>Evidence to save</h3>
+          <p>Save your dated inspection note and an annotated photo if you have one.</p>
+          <h3>Readiness checkpoint</h3>
+          <p>Ask a second reader to locate the three observations from your notes. If feedback is pending, compare and refine a second set of notes using the <a href="#p5">practice log</a>.</p>
+        </div>
+      </div>
+      <footer><a href="#p2">Milestone map</a><span>4 / 6</span></footer>
+    </section>
+
+    <section class="page" id="p5" aria-labelledby="worksheet">
+      <div>
+        <p class="eyebrow">Reusable worksheet</p>
+        <h2 id="worksheet">Practice log</h2>
+        <p>Use one copy each time you practice a repair or inspection skill.</p>
+        <div class="write"><h3>Date and task</h3><div class="write-line"></div></div>
+        <div class="write"><h3>What I observed</h3><div class="write-line"></div><div class="write-line"></div><div class="write-line"></div></div>
+        <div class="write"><h3>Evidence saved</h3><div class="write-line"></div></div>
+        <div class="write"><h3>What I will test or ask next</h3><div class="write-line"></div><div class="write-line"></div></div>
+      </div>
+      <footer><a href="#p2">Milestone map</a><span>5 / 6</span></footer>
+    </section>
+
+    <section class="page" id="p6" aria-labelledby="sources">
+      <div>
+        <p class="eyebrow">Reference</p>
+        <h2 id="sources">Source register</h2>
+        <p>This template includes sample exercises. Add verified sources for the requirements and field-specific claims in the finished workbook.</p>
+        <dl>
+          <dt><strong>Source 01</strong> · Publishing organization and title</dt>
+          <dd>Record the date checked, a readable link, and the requirement or claim supported.</dd>
+        </dl>
+      </div>
+      <footer><a href="#p2">Milestone map</a><span>6 / 6</span></footer>
+    </section>
+  </main>
+</body>
+</html>
